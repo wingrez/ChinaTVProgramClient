@@ -1,3 +1,5 @@
+http://www.webxml.com.cn/webservices/ChinaTVprogramWebService.asmx?wsdl
+
 getAreaString 
 获得支持的省市（地区）和分类电视名称
 省市和分类电视ID@省市和分类电视名称@所属地区。
