@@ -5,14 +5,17 @@ import java.awt.EventQueue;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.UnknownHostException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.event.ListSelectionEvent;
@@ -80,7 +83,17 @@ public class Window {
 		JLabel lblNewLabel = new JLabel("省市区");
 		scrollPane.setColumnHeaderView(lblNewLabel);
 
-		data[0] = client.getAreaString();
+		try {
+			data[0] = client.getAreaString();
+		}catch(Exception e) {
+			JOptionPane.showMessageDialog(
+                    frame,
+                    "网络连接失败",
+                    "错误",
+                    JOptionPane.WARNING_MESSAGE
+            );
+			System.exit(-1);
+		}
 		list[0] = new JList(data[0]);
 		scrollPane.setViewportView(list[0]);
 		list[0].addListSelectionListener(lsh[0]);
