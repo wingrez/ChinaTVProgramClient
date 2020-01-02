@@ -14,6 +14,6 @@
 	<classpathentry kind="lib" path="D:/software/eclipse/plugins/org.eclipse.ui.workbench_3.113.0.v20190219-1432.jar" sourcepath="D:/software/eclipse/plugins/org.eclipse.ui.workbench_3.113.0.v20190219-1432.jar"/>
 	<classpathentry kind="lib" path="D:/software/eclipse/plugins/com.ibm.icu_63.1.0.v20181030-1705.jar" sourcepath="D:/software/eclipse/plugins/com.ibm.icu_63.1.0.v20181030-1705.jar"/>
 	<classpathentry kind="lib" path="D:/software/eclipse/plugins/org.eclipse.ui.forms_3.7.500.v20190216-1545.jar" sourcepath="D:/software/eclipse/plugins/org.eclipse.ui.forms_3.7.500.v20190216-1545.jar"/>
-	<classpathentry kind="lib" path="D:/download/datepicker.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/git/ChinaTVProgramClient/datepicker.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
