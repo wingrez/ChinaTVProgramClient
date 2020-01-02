@@ -19,7 +19,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ChinaTVprogramWebService", targetNamespace = "http://WebXml.com.cn/", wsdlLocation = "file:/D:/workspace/git/CS-Study/\u5206\u5e03\u5f0f\u8ba1\u7b97/exp4/ChinaTVprogramWebService.asmx")
+@WebServiceClient(name = "ChinaTVprogramWebService", targetNamespace = "http://WebXml.com.cn/", wsdlLocation = "file:/D:/workspace/git/ChinaTVProgramClient/ChinaTVPrograme/src/ChinaTVprogramWebService.asmx")
 public class ChinaTVprogramWebService
     extends Service
 {
@@ -32,7 +32,7 @@ public class ChinaTVprogramWebService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/D:/workspace/git/CS-Study/\u5206\u5e03\u5f0f\u8ba1\u7b97/exp4/ChinaTVprogramWebService.asmx");
+            url = new URL("file:/D:/workspace/git/ChinaTVProgramClient/ChinaTVPrograme/src/ChinaTVprogramWebService.asmx");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
