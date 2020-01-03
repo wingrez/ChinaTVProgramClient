@@ -153,7 +153,7 @@ public class Window {
 		panel.add(btnNewButton);
 	}
 
-	class ListSelectionHandler implements ListSelectionListener {
+	class ListSelectionHandler implements ListSelectionListener { //监听JList动作
 
 		private int id;
 		private int choose;

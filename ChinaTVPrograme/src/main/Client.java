@@ -13,7 +13,7 @@ public class Client {
 		pservice = service.getChinaTVprogramWebServiceSoap();
 	}
 
-	private String split(String s, String regex) {
+	private String split(String s, String regex) { //分割字符串
 		String t = "";
 		String[] sa = s.split(regex);
 		for (int i = 0; i < sa.length; i++) {
@@ -22,7 +22,7 @@ public class Client {
 		return t;
 	}
 
-	public String[] getAreaString() {
+	public String[] getAreaString() { //获取区域信息
 		List<String> l = pservice.getAreaString().getString();
 		String[] s = new String[l.size()];
 		for (int i = 0; i < l.size(); i++) {
@@ -31,7 +31,7 @@ public class Client {
 		return s;
 	}
 
-	public String[] getTVstationString(int choose) {
+	public String[] getTVstationString(int choose) { //获取电视台信息
 		List<String> l = pservice.getTVstationString(choose).getString();
 		String[] s = new String[l.size()];
 		for (int i = 0; i < l.size(); i++) {
@@ -40,7 +40,7 @@ public class Client {
 		return s;
 	}
 
-	public String[] getTVchannelString(int choose) {
+	public String[] getTVchannelString(int choose) { //获取电视频道信息
 		List<String> l = pservice.getTVchannelString(choose).getString();
 		String[] s = new String[l.size()];
 		for (int i = 0; i < l.size(); i++) {
@@ -49,7 +49,7 @@ public class Client {
 		return s;
 	}
 
-	public String[] getTVprogramString(int choose, String date) {
+	public String[] getTVprogramString(int choose, String date) { //获取电视节目信息
 		List<String> l = pservice.getTVprogramString(choose, date, null).getString();
 		String[] s = new String[l.size()];
 		for (int i = 0; i < l.size(); i++) {
